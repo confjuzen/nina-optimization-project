@@ -1,5 +1,3 @@
-import $ from "jquery";
-
 (function ($) {
   $.fn.mauGallery = function (options) {
     var options = $.extend($.fn.mauGallery.defaults, options);
@@ -123,9 +121,9 @@ import $ from "jquery";
           activeImage = $(this);
         }
       });
-      let activeTag = $(".tags-bar a.active-tag").data("images-toggle");
+      let activeTag = $(".tags-bar span.active-tag").data("images-toggle");
       let imagesCollection = [];
-      if (activeTag === "Tous") {
+      if (activeTag === "all") {
         $(".item-column").each(function () {
           if ($(this).children("img").length) {
             imagesCollection.push($(this).children("img"));
@@ -158,9 +156,9 @@ import $ from "jquery";
           activeImage = $(this);
         }
       });
-      let activeTag = $(".tags-bar a.active-tag").data("images-toggle");
+      let activeTag = $(".tags-bar span.active-tag").data("images-toggle");
       let imagesCollection = [];
-      if (activeTag === "Tous") {
+      if (activeTag === "all") {
         $(".item-column").each(function () {
           if ($(this).children("img").length) {
             imagesCollection.push($(this).children("img"));
@@ -187,7 +185,7 @@ import $ from "jquery";
     createLightBox(gallery, lightboxId, navigation) {
       gallery.append(`<div class="modal fade" id="${
         lightboxId ? lightboxId : "galleryLightbox"
-      }" tabindex="-1" role="dialog" aria-labelledby="lightboxModalLabel" aria-hidden="true">
+      }" tabindex="-1" role="dialog" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-body">
@@ -209,10 +207,10 @@ import $ from "jquery";
     },
     showItemTags(gallery, position, tags) {
       var tagItems =
-        '<li class="nav-item"><button class="nav-link active active-tag" data-images-toggle="Tous">Tous</button></li>';
+        '<li class="nav-item"><span class="nav-link active active-tag"  data-images-toggle="all">Tous</span></li>';
       $.each(tags, function (index, value) {
         tagItems += `<li class="nav-item active">
-                <button class="nav-link" data-images-toggle="${value}">${value}</button></li>`;
+                <span class="nav-link"  data-images-toggle="${value}">${value}</span></li>`;
       });
       var tagsRow = `<ul class="my-4 tags-bar nav nav-pills">${tagItems}</ul>`;
 
@@ -228,14 +226,14 @@ import $ from "jquery";
       if ($(this).hasClass("active-tag")) {
         return;
       }
-      $(".active.active-tag").removeClass("active active-tag");
-      $(this).addClass("active-tag active");
+      $(".active-tag").removeClass("active active-tag");
+      $(this).addClass("active-tag");
 
       var tag = $(this).data("images-toggle");
 
       $(".gallery-item").each(function () {
         $(this).parents(".item-column").hide();
-        if (tag === "Tous") {
+        if (tag === "all") {
           $(this).parents(".item-column").show(300);
         } else if ($(this).data("gallery-tag") === tag) {
           $(this).parents(".item-column").show(300);
