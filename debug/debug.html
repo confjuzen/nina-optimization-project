@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+      rel="stylesheet"
+    />
+    <title>DEBUG</title>
+  </head>
+  <body>
+    <main>
+      <h1>DEBUG</h1>
+
+      <h2 id="tittle">PERFORMANCE</h2>
+
+      <div class="card">
+        <h3 id="score">SCORE</h3>
+        <h3 id="changes">PROBLEM</h3>
+      </div>
+
+      <div class="card">
+        <a href="reports/1.html/">74</a>
+        <p>Largest Contentful Paint element 16.820 ms</p>
+        <p>
+          Modification de la taille et du format de fichier de la photo en WebP
+          avec une compression.
+        </p>
+      </div>
+
+      <div class="card">
+        <a href="reports/2.html/">96</a>
+        <p>
+          Enable text compression, Minify JavaScript, Minify CSS, Reduce unused
+          CSS
+        </p>
+        <p>
+          Ajout de "Vite" pour minifier les fichiers ".js" et ".css". J'ai
+          également intégré les fichiers "jQuery.js" et les fichiers de polices
+          en ".woff2" pour avoir des fichiers plus petit, ainsi que le site
+          n'ait pas à télécharger de fichiers depuis d'autres serveurs.
+        </p>
+      </div>
+
+      <div class="card">
+        <a href="reports/3.html/">99</a>
+        <p>Score Final.</p>
+      </div>
+
+      <h2 id="tittle">RÉPARATION</h2>
+
+      <div class="card">
+        <h3 id="score">IMAGE</h3>
+        <h3 id="changes">PROBLEM</h3>
+      </div>
+
+      <div class="card">
+        <a href="reports/4.png">.png</a>
+        <p>
+          La barre de navigation de la galerie ne fonctionne pas correctement.
+          L'élément actif n'est pas mis en focus et il n'y a pas de hover, ausi
+          avec un curseur incorrect.
+        </p>
+        <pre>Ajout CSS:
+            <code class="language-css line-numbers">
+            .nav-link:hover,
+            .active-tag {
+              background-color: #beb45a !important;
+              color: #fff !important;
+              cursor: pointer !important;
+              border-radius: 0.25rem !important;
+            }
+            </code>
+          </pre>
+      </div>
+
+      <div class="card">
+        <a href="reports/5.png">.png</a>
+        <p>
+          Problem avec les boutton de la galerie ou sa changes pas de image
+          avect les bouton avant et aprets.
+        </p>
+        <pre>Le maugallery.js a été modifié, j'ai comparis le code avec le code originel de <a href="https://www.jqueryscript.net/gallery/Filterable-Bootstrap-Gallery-Lightbox-mauGallery.html">jqueryscript.net</a>
+            <code class="language-css line-numbers">
+              //AVANT
+              if ($(activeImage).attr("src") === $(this).attr("src")) {
+                index = i;
+              };
+
+              //APRES
+              if ($(activeImage).attr("src") === $(this).attr("src")) {
+                index = i - 1;
+              };
+            </code>
+          </pre>
+      </div>
+
+      <h2 id="tittle">ACCESSIBILITY</h2>
+
+      <div class="card">
+        <h3 id="score">SCORE</h3>
+        <h3 id="changes">PROBLEM</h3>
+      </div>
+
+      <div class="card">
+        <a href="reports/6.html">70</a>
+        <p>
+          Image elements do not have [alt] attributes, Document doesn't have a
+          title element
+        </p>
+        <p>
+          Ajouter des descripition pour touts les elements:<br />
+          "alt" pour les images.<br />
+          "title" pour les boutton et les liens.<br />
+          "for" pour les label dus champs de formulaire.<br />
+          "article" a la place de "div" pour l'articles.<br />
+          "lang="fr""" pour la langue du site.<br />
+          "title" pour la page.<br />
+          "meta" description du site.
+        </p>
+      </div>
+
+      <div class="card">
+        <a href="reports/7.html">94</a>
+        <p>Heading elements are not in a sequentially-descending order</p>
+        <p>Correctement respecter l'ordre des titre.</p>
+      </div>
+
+      <div class="card">
+        <a href="reports/8.html">96</a>
+        <p>
+          Background and foreground colors do not have a sufficient contrast
+          ratio.
+        </p>
+        <p>
+          Changer la couleur du bouton de la galerie a "#B35D1E" pour avoir un
+          bon contraste.
+        </p>
+      </div>
+
+      <div class="card">
+        <a href="reports/9.html">100</a>
+        <p>Score Final.</p>
+      </div>
+
+      <h2 id="tittle">CEO</h2>
+
+      <div class="card">
+        <h3 id="score">SCORE</h3>
+        <h3 id="changes">PROBLEM</h3>
+      </div>
+
+      <div class="card">
+        <a href="reports/10.html">83</a>
+        <p>Links are not crawlable</p>
+        <p>Changer les bouton du navbar galerie de liens "a" en "button".</p>
+      </div>
+
+      <div class="card">
+        <a href="reports/11.html">92</a>
+        <p>robots.txt is not valid</p>
+        <p>Ajouter un fichier "robots.txt" pour les serchengins.</p>
+      </div>
+
+      <div class="card">
+        <a href="reports/12.html">100</a>
+        <p>Score Final.</p>
+      </div>
+
+      <h2 id="tittle">FINAL</h2>
+
+      <div class="card">
+        <h3>
+          <a class="final" href="reports/13.html">Dernier Lighthous Report</a>
+        </h3>
+      </div>
+    </main>
+  </body>
+</html>
