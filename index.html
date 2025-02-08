@@ -44,7 +44,10 @@
           "addressLocality": "Bordeaux",
           "addressRegion": "Garonne",
           "postalCode": "33200",
-          "addressCountry": "FR"
+          "addressCountry": {
+            "@type": "Country",
+            "name": "FR"
+          }
         },
         "founder": {
           "@type": "Person",
@@ -69,44 +72,48 @@
           "https://ninacarducci.github.io/",
           "https://www.github.com/ninacarducci"
         ],
-        "makesOffer": [
-          {
-            "@type": "Service",
-            "name": "Photographie de mariage",
-            "description": "Reportage photo pour mariages, engagement et cérémonies.",
-            "provider": {
-              "@type": "Person",
-              "name": "Nina Carducci"
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Services de photographie",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "name": "Photographie de mariage",
+              "description": "Reportage photo pour mariages, engagement et cérémonies.",
+              "offeredBy": {
+                "@type": "Person",
+                "name": "Nina Carducci"
+              }
+            },
+            {
+              "@type": "Offer",
+              "name": "Photographie de concerts",
+              "description": "Capturer les meilleurs moments des spectacles live et festivals.",
+              "offeredBy": {
+                "@type": "Person",
+                "name": "Nina Carducci"
+              }
+            },
+            {
+              "@type": "Offer",
+              "name": "Portraits professionnels",
+              "description": "Shooting en studio ou en extérieur pour book et CV.",
+              "offeredBy": {
+                "@type": "Person",
+                "name": "Nina Carducci"
+              }
+            },
+            {
+              "@type": "Offer",
+              "name": "Événements d'entreprise",
+              "description": "Photographie pour conférences, séminaires et networking.",
+              "offeredBy": {
+                "@type": "Person",
+                "name": "Nina Carducci"
+              }
             }
-          },
-          {
-            "@type": "Service",
-            "name": "Photographie de concerts",
-            "description": "Capturer les meilleurs moments des spectacles live et festivals.",
-            "provider": {
-              "@type": "Person",
-              "name": "Nina Carducci"
-            }
-          },
-          {
-            "@type": "Service",
-            "name": "Portraits professionnels",
-            "description": "Shooting en studio ou en extérieur pour book et CV.",
-            "provider": {
-              "@type": "Person",
-              "name": "Nina Carducci"
-            }
-          },
-          {
-            "@type": "Service",
-            "name": "Événements d'entreprise",
-            "description": "Photographie pour conférences, séminaires et networking.",
-            "provider": {
-              "@type": "Person",
-              "name": "Nina Carducci"
-            }
-          }
-        ]
+          ]
+        }
       }
     </script>
   </head>
