@@ -20,13 +20,17 @@ main {
   max-width: 800px;
   margin: 0 auto;
   gap: 10px;
-  padding: 60px;
+  padding: 20px;
 }
 
 h2 {
   align-self: flex-start;
   padding: 10px;
   margin-top: 30px;
+}
+h4 {
+  text-align: left;
+  margin: 7px 0 15px 0;
 }
 .card {
   display: grid;
@@ -45,19 +49,28 @@ h2 {
 .card a {
   grid-column: 1;
 }
-.card p {
+br {
+  display: block;
+  margin: 7px 0;
+}
+.card-content {
   grid-column: 2;
   border: solid 2px #1f1d2e;
   border-radius: 10px;
   text-align: left;
   padding: 10px;
 }
+p,
+li {
+  text-align: left;
+}
+li {
+  margin: 10px 20px;
+}
+
 pre {
   text-align: left;
-  grid-column: 2;
-  border: solid 2px #1f1d2e;
-  border-radius: 10px;
-  padding: 10px;
+  transform: translateX(-40px);
 }
 code {
   font-family: jetbrains mono;
