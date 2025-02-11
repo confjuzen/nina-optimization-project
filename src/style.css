@@ -1,31 +1,31 @@
 @font-face {
   font-family: "spectral";
   src: url("./fonts/spectral-bolditalic-webfont.woff2") format("woff2");
-  font-weight: bold;
+  font-weight: 600;
   font-style: italic;
 }
 @font-face {
   font-family: "spectral";
   src: url("./fonts/spectral-bold-webfont.woff2") format("woff2");
-  font-weight: bold;
+  font-weight: 600;
   font-style: normal;
 }
 @font-face {
   font-family: "spectral";
   src: url("./fonts/spectral-lightitalic-webfont.woff2") format("woff2");
-  font-weight: lighter;
+  font-weight: 300;
   font-style: italic;
 }
 @font-face {
   font-family: "Inter";
   src: url("./fonts/Inter-Medium.woff2") format("woff2");
-  font-weight: medium;
+  font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: "Inter";
   src: url("./fonts/Inter-Regular.woff2") format("woff2");
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
 }
 body {
@@ -35,6 +35,7 @@ body {
 * {
   font-family: "Inter";
   font-style: normal;
+  font-weight: 400;
 }
 
 blockquote {
@@ -60,7 +61,7 @@ blockquote {
 }
 .top-header .name {
   font-size: 26px;
-  font-weight: medium;
+  font-weight: 500;
 }
 .nav ul {
   display: flex;
@@ -113,7 +114,7 @@ blockquote {
 }
 .about-me__introduction {
   font-family: "spectral";
-  font-weight: bold;
+  font-weight: 600;
   font-style: italic;
   width: 60%;
 }
@@ -174,11 +175,11 @@ blockquote {
 .quote__text {
   font-family: spectral;
   font-style: italic;
-  font-weight: lighter;
+  font-weight: 300;
 }
 .quote__author {
   font-family: "spectral";
-  font-weight: bold;
+  font-weight: 600;
   font-size: 22px;
 }
 #services {
