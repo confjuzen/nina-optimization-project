@@ -1,3 +1,3 @@
 export default {
-  base: "/nina-optimization-project/",
+  base: "./",
 };
