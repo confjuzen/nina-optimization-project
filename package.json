@@ -10,7 +10,6 @@
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^7.0.2",
-    "fs-extra": "^11.3.0",
     "postcss": "^8.5.1",
     "postcss-uncss": "^0.17.0",
     "purgecss": "^7.0.2",
