@@ -7,14 +7,11 @@
       content="Portfolio photographie de Nina Carducci"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/bootstrap/bootstrap.css" />
-    <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="src/style.scss" />
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="./public/icon.svg" />
-    <script type="module" src="src/bootstrap/bootstrap.bundle.js"></script>
-    <script type="module" src="src/jquery.js"></script>
-    <script type="module" src="src/maugallery.js"></script>
-    <script type="module" src="src/scripts.js"></script>
+    <script defer type="module" src="src/main.js"></script>
+
     <meta property="og:title" content="Nina Carducci" />
     <meta
       property="og:description"
@@ -237,7 +234,6 @@
             </div>
             <div class="carousel-item">
               <img
-                loading="lazy"
                 fetchpriority="low"
                 sizes="(width: 100%)"
                 src="././src/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp"
@@ -247,7 +243,7 @@
             </div>
             <div class="carousel-item">
               <img
-                loading="lazy"
+                fetchpriority="low"
                 sizes="(width: 100%)"
                 src="././src/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp"
                 class="d-block w-100"
@@ -312,7 +308,6 @@
           <div class="gallery" style="display: none">
             <img
               loading="lazy"
-              decoding="async"
               fetchpriority="low"
               data-gallery-tag="Concert"
               class="gallery-item"
@@ -321,7 +316,6 @@
             />
             <img
               loading="lazy"
-              decoding="async"
               fetchpriority="low"
               data-gallery-tag="Entreprises"
               class="gallery-item"
@@ -330,7 +324,6 @@
             />
             <img
               loading="lazy"
-              decoding="async"
               fetchpriority="low"
               data-gallery-tag="Entreprises"
               class="gallery-item"
@@ -339,7 +332,6 @@
             />
             <img
               loading="lazy"
-              decoding="async"
               fetchpriority="low"
               data-gallery-tag="Mariages"
               class="gallery-item"
@@ -348,7 +340,6 @@
             />
             <img
               loading="lazy"
-              decoding="async"
               fetchpriority="low"
               data-gallery-tag="Portrait"
               class="gallery-item"
@@ -357,7 +348,6 @@
             />
             <img
               loading="lazy"
-              decoding="async"
               fetchpriority="low"
               data-gallery-tag="Mariages"
               class="gallery-item"
@@ -366,7 +356,6 @@
             />
             <img
               loading="lazy"
-              decoding="async"
               fetchpriority="low"
               data-gallery-tag="Portrait"
               class="gallery-item"
@@ -375,7 +364,6 @@
             />
             <img
               loading="lazy"
-              decoding="async"
               fetchpriority="low"
               data-gallery-tag="Concert"
               class="gallery-item"
@@ -384,7 +372,6 @@
             />
             <img
               loading="lazy"
-              decoding="async"
               fetchpriority="low"
               data-gallery-tag="Entreprises"
               class="gallery-item"
@@ -492,7 +479,6 @@
           <div class="picture right">
             <img
               loading="lazy"
-              decoding="async"
               fetchpriority="low"
               src="././src/images/camera.webp"
               alt="Photo de une caméra"
