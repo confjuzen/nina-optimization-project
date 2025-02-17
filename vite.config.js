@@ -1,5 +1,7 @@
 import { defineConfig } from 'vite';
 import purgecss from 'vite-plugin-purgecss';
+import fs from 'fs';
+import path from 'path';
 
 export default defineConfig({
   base: "./",

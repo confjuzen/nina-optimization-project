@@ -1,36 +1,7 @@
 
 
 
-@font-face {
-  font-family: "spectral";
-  src: url("./fonts/spectral-bolditalic-webfont.woff2") format("woff2");
-  font-weight: 600;
-  font-style: italic;
-}
-@font-face {
-  font-family: "spectral";
-  src: url("./fonts/spectral-bold-webfont.woff2") format("woff2");
-  font-weight: 600;
-  font-style: normal;
-}
-@font-face {
-  font-family: "spectral";
-  src: url("./fonts/spectral-lightitalic-webfont.woff2") format("woff2");
-  font-weight: 300;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Inter";
-  src: url("./fonts/Inter-Medium.woff2") format("woff2");
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Inter";
-  src: url("./fonts/Inter-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
+
 @import "bootstrap/scss/bootstrap";
 
 body {
